@@ -18,7 +18,7 @@ export default function Home() {
         Finally—A Tool That Builds High-Converting Landing Pages in 4 Easy Steps So You Can Finally Get the MRR You Deserve, Even If You’re Just Starting Out.
       </p>
       
-      <CTAButton text="I want to be first in the waiting list" href="#waitlist" className="mt-12" />
+      <CTAButton />
     </main>
   );
 }
