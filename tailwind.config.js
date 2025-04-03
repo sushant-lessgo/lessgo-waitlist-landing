@@ -18,11 +18,12 @@ module.exports = {
         },
       },
       fontSize: {
-        hero: '3rem',         // 48px
-        subhero: '1.25rem',   // 20px
-        timerDigit: '2rem',   // 32px
+        eyebrow: '2rem',
+        headline: '5rem',
+        subheadline: '1.25rem',
+        timerDigit: '2rem',
         timerLabel: '0.875rem',
-        body: '1.125rem',     // 18px
+        body: '1.125rem',
       },
     },
   },
