@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -25,8 +23,8 @@ module.exports = {
         timerDigit: '2rem',   // 32px
         timerLabel: '0.875rem',
         body: '1.125rem',     // 18px
+      },
     },
   },
-},
   plugins: [],
 }
