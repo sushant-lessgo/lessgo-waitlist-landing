@@ -3,7 +3,7 @@
 interface CTAButtonProps {
   text?: string; // ✅ Optional
   href?: string; // ✅ Optional
-  onClick?: () => void; 
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   className?: string; // ✅ Optional
 }
 
@@ -21,8 +21,8 @@ export default function CTAButton({
   const combinedStyles = `${baseStyles} ${className}`.trim();
   
   return (
-    <a href={href} className={combinedStyles} onClick={onClick}>
+    <button onClick={onClick} className={combinedStyles}>
       {text}
-    </a>
+    </button>
   );
 }
