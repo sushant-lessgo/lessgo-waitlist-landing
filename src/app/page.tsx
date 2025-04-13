@@ -50,44 +50,57 @@ export default function Home() {
         
 
           {/* Intro Section */}
-          <div className="mb-16 max-w-3xl mx-auto\">
-            <p className="text-xl font-bold mb-6">Dear Founder,</p>
-            <p className="text-lg mb-6">If you're reading this right now then one thing is true:</p>
-            <p className="text-xl font-medium bg-yellow-100 px-4 py-2 rounded-lg mb-8">You want freedom that comes with being an Entrepreneur.</p>
-            
-            <ul className="space-y-2 mb-8 ml-6">
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600 mr-2"></span>
-                <span>Money Freedom</span>
-              </li>
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600 mr-2"></span>
-                <span>Time Freedom</span>
-              </li>
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600 mr-2"></span>
-                <span>Location Freedom</span>
-              </li>
-            </ul>
-
-            <p className="text-lg mb-6">And of course you want to have a consistent MRR which enables exactly that.</p>
-            
-            <p className="text-lg mb-4">To enable this you have...</p>
-            <ul className="space-y-2 mb-8 ml-6">
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600 mr-2"></span>
-                <span>Built the SaaS</span>
-              </li>
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600 mr-2"></span>
-                <span>Perfected the UI</span>
-              </li>
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600 mr-2"></span>
-                <span>Coded the AI</span>
-              </li>
-            </ul>
+          <div className="mb-4 max-w-3xl mx-auto text-lg space-y-3 leading-relaxed">
+            <p className="text-xl font-bold">Dear Friend,</p>
+            <p>If you are a SaaS founder… and you’re reading this right now…</p>
+            <p>Then one thing is probably true:</p>
+            <p className="underline">You’re stuck with a landing page that won’t convert.</p>
+            <p>Listen, if you're anything like me, you've probably already tried your luck with some of the more "popular" solutions...</p>
+            <p>Like freelancers.</p>
+            <p>They're good when they're good, but there's always a handful that's not.</p>
+            <p>And nine times out of ten, most freelancers you hire will usually end up disappointing you.</p>
+            <p>It could be something simple -- like misplacing a dot or a comma... or it could be something much worse -- like you paid $600 to end up with a clunky mess that looks like it was built in Dreamweaver by a sleep-deprived IT student in 2003 — and somehow no one told them we’ve moved on.</p>
+            <p>Or maybe you’ve tried no-code tools.</p>
+            <p>They say it’s plug-and-play — but only if you’ve got the instincts of a designer and the patience of a monk.</p>
+            <p>Most founders?</p>
+            <p>They start with a “simple” template…</p>
+            <p>Then spend six hours obsessing over font sizes, button shadows, and spacing that never quite aligns.</p>
+            <p>Suddenly, it’s 2 a.m. and your “quick landing page” still doesn’t feel launch-ready.</p>
+            <p>(I know because I've been there.)</p>
+            <p>Maybe you’ve even tried one of those AI-powered landing page builders — hoping for a quick win.</p>
+            <p>But the best thing you could get was a lot of soulless, cookie-cutter copy that reads like ChatGPT got stuck in marketing school.</p>
+            <p>Looks decent.</p>
+            <p>Sounds... kinda okay.</p>
+            <p>Does it convert though? Not really.</p>
+            <p>It’s like AI helped you write something —</p>
+            <p>Just not something you’d actually publish.</p>
+            <p>Because, let’s face it…</p>
+            <p className="font-bold underline">Pretty landing pages don’t sell SaaS.</p>
+            <p>They might work for:</p>
+            <ul className="list-disc pl-16 mb-8 text-lg">
+            <li className="mb-2">Instagram lifestyle coaches</li>
+            <li className="mb-2">Design portfolios</li>
+            <li className="mb-2">Personal blogs</li>
+          </ul>
+            <p>But for a SaaS product in 2025?</p>
+            <p>Looks nice ≠ converts.</p>
+            <p>You need clarity, copy that speaks to real pain, and structure that moves people to act. </p>
           </div>
+
+          <div className="mb-12">
+          {!showForm && (
+        <CTAButton
+          
+          onClick={(e) => {
+            e.preventDefault(); // If you're still using <a> in CTAButton
+            setShowForm(true); // ✅ Toggle the form
+          }}
+        />
+      )}
+
+      {showForm && <WaitlistForm />}
+
+      </div>
 
           {/* Problem Section */}
           <div className="mb-16 max-w-3xl mx-auto">
