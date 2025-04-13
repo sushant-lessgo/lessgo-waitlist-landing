@@ -6,25 +6,34 @@ import WaitlistForm from "./components/WaitlistForm";
 export default function Home() {
   const [showForm, setShowForm] = useState(false);
   return (
-    <main className="flex flex-col items-center justify-center px-6 py-20 text-center">
-      {/* Eyebrow */}
-      <h2 className="text-eyebrow font-heading text-brand-dark leading-tight max-w-[60rem]">
-        No Copywriter. No Marketer. No Designer – NO PROBLEM.
-      </h2>
+   
+   <>
 
+<header className="w-full sticky top-0 bg-white z-50 shadow-sm py-3">
+  <div className="max-w-6xl mx-auto flex items-center justify-between px-4">
+    <img src="/logo.svg" alt="Lessgo Logo" className="h-48 -my-20" />
+  </div>
+</header>
+
+
+   
+   <main className="flex flex-col items-center justify-center px-6 py-20 text-center">
+    
+   
       {/* Heading*/}
-      <h1 className="text-headline font-heading font-extrabold text-brand-dark leading-tight max-w-[70rem]">
-      4 Easy Steps to Consistent MRR
+      <h1 className="text-headline font-heading font-extrabold text-brand-text leading-tight max-w-[70rem]">
+      The <span className="underline text-brand-accentPrimary">Simplest</span> Way to Turn Your Idea Into a High Converting Landing Page — Without Spending $5,000+ on Copywriters or “Growth Hackers”
       </h1>
 
       {/* Subheading */}
-      <p className="text-subheadline font-body italic max-w-[60rem] mt-6 text-brand-soft">
-        Finally—A Tool That Builds High-Converting Landing Pages in 4 Easy Steps So You Can Finally Get the MRR You Deserve, Even If You're Just Starting Out.
+      <p className="text-subheadline font-semibold font-body italic text-brand-text max-w-[60rem] mt-6">
+      35 year-old entrepreneur from Amsterdam builds a super-intuitive new AI that can easily make the perfect
+      “Cash Cow Landing Page” — in as little as four simple steps
       </p>
       
       {!showForm && (
         <CTAButton
-          text="I want to be first in the waiting list"
+          
           onClick={(e) => {
             e.preventDefault(); // If you're still using <a> in CTAButton
             setShowForm(true); // ✅ Toggle the form
@@ -316,5 +325,6 @@ export default function Home() {
 
   
     </main>
+    </>
   );
 }

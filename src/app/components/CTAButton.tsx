@@ -8,13 +8,13 @@ interface CTAButtonProps {
 }
 
 export default function CTAButton({
-    text = 'I want to be first in the waiting list',
+    text = 'Join the waiting list now',
     href = '#waitlist',
     onClick,
     className = 'mt-12',
   }: CTAButtonProps) {
   const baseStyles =
-    'inline-block px-40 py-6 bg-amber-600 text-white text-4xl font-heading font-bold border-2 border-neutral-50 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition-all duration-200 ease-in-out';
+    'inline-block px-40 py-6 bg-brand-accentPrimary text-white text-4xl font-heading font-bold border-2 border-brand-text rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition-all duration-200 ease-in-out';
 
   
 

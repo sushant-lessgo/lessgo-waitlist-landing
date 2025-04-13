@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['Montserrat', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        heading: ['Sora', 'sans-serif'],
+        body: ['Sora', 'sans-serif'],
       },
       colors: {
         brand: {
@@ -17,12 +17,15 @@ module.exports = {
           timer: '#FDD76E',
           dark: '#000000',
           soft: '#333333',
+          text: '#003E80',
+          accentPrimary: '#FF814A',
+          logo: '#006CFF',
         },
       },
       fontSize: {
-        eyebrow: '2rem',
-        headline: '5rem',
-        subheadline: '1.25rem',
+        
+        headline: '2.9rem',
+        subheadline: '1.5rem',
         timerDigit: '2rem',
         timerLabel: '0.875rem',
         body: '1.125rem',
