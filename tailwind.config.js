@@ -24,13 +24,43 @@ module.exports = {
       },
       fontSize: {
         
-        headline: '2.9rem',
-        subheadline: '1.5rem',
-        timerDigit: '2rem',
-        timerLabel: '0.875rem',
+        
+        
         body: '1.125rem',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        // Base (mobile-first)
+        '.text-headline': {
+          fontSize: '2rem',
+        },
+        '.text-subheadline': {
+          fontSize: '1.25rem',
+        },
+  
+        // md: overrides
+        '@screen md': {
+          '.text-headline': {
+            fontSize: '2.5rem',
+          },
+          '.text-subheadline': {
+            fontSize: '1.25rem',
+          },
+        },
+  
+        // lg: overrides
+        '@screen lg': {
+          '.text-headline': {
+            fontSize: '2.9rem',
+          },
+          '.text-subheadline': {
+            fontSize: '1.5rem',
+          },
+        },
+      });
+    },
+  ],
 }
