@@ -44,13 +44,13 @@ export default function Home() {
       {showForm && <WaitlistForm />}
 
       
-      <div className="bg-gray-50 text-gray-900 font-sans text-left">
+      <div className="text-brand-text text-left">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           
         
 
           {/* Intro Section */}
-          <div className="mb-4 max-w-3xl mx-auto text-lg space-y-3 leading-relaxed">
+          <div className="mb-4 max-w-3xl mx-auto text-body space-y-6 leading-relaxed">
             <p className="text-xl font-bold">Dear Friend,</p>
             <p>If you are a SaaS founder… and you’re reading this right now…</p>
             <p>Then one thing is probably true:</p>
@@ -77,17 +77,17 @@ export default function Home() {
             <p>Because, let’s face it…</p>
             <p className="font-bold underline">Pretty landing pages don’t sell SaaS.</p>
             <p>They might work for:</p>
-            <ul className="list-disc pl-16 mb-8 text-lg">
-            <li className="mb-2">Instagram lifestyle coaches</li>
-            <li className="mb-2">Design portfolios</li>
-            <li className="mb-2">Personal blogs</li>
+            <ul className="pl-8 mb-6 text-body">
+            <li className="mb-2"> <span> ▸ </span> <span> Instagram lifestyle coaches </span> </li>
+            <li className="mb-2"> <span> ▸ </span> <span> Design portfolios </span> </li>
+            <li className="mb-2"> <span> ▸ </span> <span> Personal blogs </span> </li>
           </ul>
             <p>But for a SaaS product in 2025?</p>
             <p>Looks nice ≠ converts.</p>
             <p>You need clarity, copy that speaks to real pain, and structure that moves people to act. </p>
           </div>
 
-          <div className="mb-12">
+          <div className="mb-20">
           {!showForm && (
         <CTAButton
           
@@ -103,55 +103,62 @@ export default function Home() {
       </div>
 
           {/* Problem Section */}
-          <div className="mb-16 max-w-3xl mx-auto">
-            <p className="text-xl font-medium bg-yellow-100 px-4 py-2 rounded-lg mb-6">But here's the catch...</p>
-            
-            <p className="text-xl font-bold underline bg-yellow-100 px-4 py-2 rounded-lg mb-6">You don't have enough paid users...</p>
-            
-            <p className="text-2xl font-bold text-center mb-4 bg-yellow-100 px-4 py-2 rounded-lg">Why?</p>
-            
-            <p className="text-xl font-medium mb-8 bg-yellow-100 px-4 py-2 rounded-lg">Because you are stuck with a landing page that won't convert</p>
-            
-            <div className="space-y-4 mb-8">
-              <p className="text-lg">Maybe you've tried some freelancers</p>
-              <p className="text-lg">Maybe you've tried some no-code tools</p>
-              <p className="text-lg">Maybe you've even tried some AI-powered landing pages builders - <span className="bg-yellow-100 px-2 py-1 rounded">desperate to increase the conversion.</span></p>
-            </div>
-            
-            <p className="text-lg mb-6">But it all feels like some generic "templatey" stuff.</p>
-            
-            <p className="text-lg mb-6">Because, let's face it...</p>
-            
-            <p className="text-lg mb-4">These "pretty landing pages" can work may be for:</p>
-            <ul className="space-y-2 mb-8 ml-6">
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600 mr-2"></span>
-                <span>Instagram dude</span>
-              </li>
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600 mr-2"></span>
-                <span>Wanna be artists</span>
-              </li>
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600 mr-2"></span>
-                <span>Onlyfans models</span>
-              </li>
-            </ul>
-            
-            <p className="text-lg mb-6">But...</p>
-            
-            <p className="text-lg font-bold underline mb-8">It won't sell a SaaS application because in 2025 it takes more than a pretty landing page to convert the users.</p>
-            
-            <p className="text-xl font-medium bg-yellow-100 px-4 py-2 rounded-lg mb-6">Sounds familiar?</p>
-            
-            <p className="text-xl font-medium bg-yellow-100 px-4 py-2 rounded-lg mb-6">It's a hot <em>mess</em>. And most founders get sucked into it.</p>
-            
-            <p className="text-xl font-bold underline bg-yellow-100 px-4 py-2 rounded-lg mb-6">But the real problem isn't you. It's the way these marketing bros have created this "create landing page in seconds" narrative..</p>
-            
-            <p className="text-xl font-medium bg-yellow-100 px-4 py-2 rounded-lg mb-6">Here's the truth of the matter...</p>
-            
-            <p className="text-xl font-medium bg-yellow-100 px-4 py-2 rounded-lg mb-8">You don't need a landing page in 5 seconds. You are ok if it takes 5 minutes but what is important is it should be able to convert. <span className="underline">Thats the ONLY job of a landing page.</span></p>
+          <div className="mb-4 max-w-3xl mx-auto text-body space-y-6 leading-relaxed">
+            <p className="text-headline font-semibold text-center"> You see, things are going to be different from 2025.</p>
+            <p>We’re not talking about the AI tools of 2023 anymore that spat out generic headlines and lorem ipsum-level content.</p>
+            <p>With the launch of GPT-4.5, multi-turn reasoning, and context-aware generation, AI can now:</p>
+
+            <ul className="pl-8 mb-6 text-body">
+            <li className="mb-2"> <span> ▸ </span> <span> Analyze entire subreddits, review threads, and user interviews </span> </li>
+            <li className="mb-2"> <span> ▸ </span> <span> Distill actual pain points and buyer language from live data </span> </li>
+            <li className="mb-2"> <span> ▸ </span> <span> Write copy that reflects what users want to hear, not just what sounds nice </span> </li>
+            <li className="mb-2"> <span> ▸ </span> <span> Suggest layouts that mirror proven high-conversion frameworks — and adapt them to the message </span> </li>
+          </ul>
+
+
+            <p>Do you see the common thread here?</p>
+            <p>I’m talking about how AI isn’t producing “garbage content” anymore.    </p>
+            <p> This thing can now produce copy and content fueled to the brim with persuasion tactics of the likes of Dan Kennedy and design layouts that could give Russell Brunson nightmares.
+            </p>
+            <p> And guess what? I bet even Russell Brunson uses AI for some of his work these days.   </p>
+            <p> Does this make him “lazy”?
+            </p>
+            <p> No.   </p>
+            <p> This makes him smart.   </p>
+            <p> AND THAT SHOULD SCARE YOU.   </p>
+            <p> Why?   </p>
+            <p> Because it’s not just Russell—but nearly 80% of your competition—that’s using AI like this to move up the ladder and push out content after content these days.   </p>
+            <p> This means they’re making all the moolah while you sit there twiddling your thumbs trying to push out the next big landing page out of your mental poophole.   </p>
+            <p> But it’s not your fault.   </p>
+            <p> It’s just that they’re too clever to advertise this super-weapon in front of the rest of the world.   </p>
+            <p>  The only problem with their use of AI?  </p>
+            <p>  (AKA <span className="font-bold">good news for you…</span> )  </p>
+            <p className="underline"> Is that most of their tools are still not able to make THE BEST use of this new version of  AI. </p>
+            <p> Because one thing they’ve never quite been able to do… <span className="font-bold"> is combine research, copy, and design into one single conversion system. </span> </p>
+            <p> And that’s where we step in. </p>
+           
+
+
+
+
+
           </div>
+
+          <div className="mb-20">
+          {!showForm && (
+        <CTAButton
+          
+          onClick={(e) => {
+            e.preventDefault(); // If you're still using <a> in CTAButton
+            setShowForm(true); // ✅ Toggle the form
+          }}
+        />
+      )}
+
+      {showForm && <WaitlistForm />}
+
+      </div>
+
 
           {/* Year 2025 Section */}
           <div className="mb-16 max-w-3xl mx-auto">
