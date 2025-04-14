@@ -36,7 +36,7 @@ export default function Home() {
       
       {!showForm && (
         <CTAButton
-          
+          gaLabel="01 hero-section"
           onClick={(e) => {
             e.preventDefault(); // If you're still using <a> in CTAButton
             setShowForm(true); // ✅ Toggle the form
@@ -93,7 +93,7 @@ export default function Home() {
           <div className="mb-20">
           {!showForm && (
         <CTAButton
-          
+          gaLabel="02 problem-section"
           onClick={(e) => {
             e.preventDefault(); // If you're still using <a> in CTAButton
             setShowForm(true); // ✅ Toggle the form
@@ -150,7 +150,7 @@ export default function Home() {
           <div className="mb-20">
           {!showForm && (
         <CTAButton
-          
+          gaLabel="03 2025 different-section"
           onClick={(e) => {
             e.preventDefault(); // If you're still using <a> in CTAButton
             setShowForm(true); // ✅ Toggle the form
@@ -232,7 +232,7 @@ export default function Home() {
       <div className="mb-20">
           {!showForm && (
         <CTAButton
-          
+          gaLabel="04 founder-section"
           onClick={(e) => {
             e.preventDefault(); // If you're still using <a> in CTAButton
             setShowForm(true); // ✅ Toggle the form
@@ -310,7 +310,7 @@ export default function Home() {
       <div className="mb-20">
           {!showForm && (
         <CTAButton
-          
+          gaLabel="05 solution-section"
           onClick={(e) => {
             e.preventDefault(); // If you're still using <a> in CTAButton
             setShowForm(true); // ✅ Toggle the form
