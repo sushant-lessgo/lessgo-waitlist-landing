@@ -31,6 +31,7 @@ export default function CTAButton({
   
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     // Track GA event
+    
     if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
       window.gtag('event', 'join_waitlist_click', {
         event_category: 'engagement',
