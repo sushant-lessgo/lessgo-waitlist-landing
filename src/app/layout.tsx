@@ -16,6 +16,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+
+      {/* Hotjar */}
+      <Script
+  id="hotjar-script"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function (c, s, q, u, a, r, e) {
+        c.hj = c.hj || function () { (c.hj.q = c.hj.q || []).push(arguments) };
+        c._hjSettings = { hjid: 6371891 };
+        r = s.getElementsByTagName('head')[0];
+        e = s.createElement('script');
+        e.async = true;
+        e.src = q + c._hjSettings.hjid + u;
+        r.appendChild(e);
+      })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 6371891);
+    `,
+  }}
+/>
+        
 {/* Google Analytics */}
 <Script
           strategy="afterInteractive"
