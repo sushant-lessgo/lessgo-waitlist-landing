@@ -11,13 +11,13 @@ export default function Home() {
   return (
    
    <>
-
+{/*
 <header className="w-full sticky top-0 bg-white z-50 shadow-sm py-3">
   <div className="max-w-6xl mx-auto flex items-center justify-between px-4">
     <img src="/logo.svg" alt="Lessgo Logo" className="h-48 -my-20" />
   </div>
-</header>
-
+</header> 
+*/}
 
    
    <main className="flex flex-col items-center justify-center px-6 py-20 text-center">
@@ -25,13 +25,12 @@ export default function Home() {
    
       {/* Heading*/}
       <h1 className="text-headline font-heading font-extrabold text-brand-text leading-tight max-w-[70rem]">
-      The <span className="underline text-brand-accentPrimary">Simplest</span> Way to Turn Your Idea Into a High Converting Landing Page — Without Spending $5,000+ on Copywriters or “Growth Hackers”
+      F*ck Launch Anxiety <span className="underline text-brand-accentPrimary"></span>
       </h1>
 
       {/* Subheading */}
-      <p className="text-subheadline font-semibold font-body italic text-brand-text max-w-[60rem] mt-6">
-      35 year-old entrepreneur from Amsterdam builds a super-intuitive new AI that can easily make the perfect
-      “Cash Cow Landing Page” — in as little as four simple steps
+      <p className="text-subheadline font-semibold font-body italic text-brand-text max-w-[60rem] mt-10 mb-2">
+      35 year old indie hacker from Amsterdam combines his coding and copywriting skills to create breakthrough landing page builder which will generate revenue while you sleep.
       </p>
       
       {!showForm && (
@@ -107,7 +106,7 @@ export default function Home() {
 
           {/* Problem Section */}
           <div className="mb-4 max-w-3xl mx-auto text-body space-y-6 leading-relaxed">
-            <p className="text-headline font-semibold text-center"> You see, things are going to be different from 2025.</p>
+            <p className="text-subheadline font-bold text-center"> You see, things are going to be different from 2025.</p>
             <p>We’re not talking about the AI tools of 2023 anymore that spat out generic headlines and lorem ipsum-level content.</p>
             <p>With the launch of GPT-4.5, multi-turn reasoning, and context-aware generation, AI can now:</p>
 

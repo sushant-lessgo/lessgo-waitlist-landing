@@ -32,16 +32,16 @@ module.exports = {
       addComponents({
         // Base (mobile-first)
         '.text-headline': {
-          fontSize: '2rem',
+          fontSize: '3rem',
         },
         '.text-subheadline': {
-          fontSize: '1.25rem',
+          fontSize: '1.15rem',
         },
   
         // md: overrides
         '@screen md': {
           '.text-headline': {
-            fontSize: '2.5rem',
+            fontSize: '3.5rem',
           },
           '.text-subheadline': {
             fontSize: '1.25rem',
@@ -51,7 +51,7 @@ module.exports = {
         // lg: overrides
         '@screen lg': {
           '.text-headline': {
-            fontSize: '2.9rem',
+            fontSize: '5rem',
           },
           '.text-subheadline': {
             fontSize: '1.5rem',
