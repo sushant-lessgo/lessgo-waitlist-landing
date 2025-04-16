@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* Subheading */}
       <p className="text-subheadline font-semibold font-body italic text-brand-text max-w-[60rem] mt-10 mb-2">
-      35 year old indie hacker from Amsterdam combines his coding and copywriting skills to create breakthrough landing page builder which will generate revenue while you sleep.
+      35 year old indie hacker from Amsterdam combines his AI and copywriting skills to create breakthrough landing page builder which will generate revenue while you sleep.
       </p>
       
       {!showForm && (
