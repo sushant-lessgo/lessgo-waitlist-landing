@@ -9,17 +9,18 @@
 
 /* 3. Light mode defaults using Tailwind color tokens */
 body {
-  @apply font-body text-brand-soft bg-white antialiased;
+  @apply font-body text-brand-text bg-white antialiased;
 }
 
-/* Optional: Global heading style */
+/* Optional: Global heading style 
 h1, h2, h3, h4, h5 {
   @apply font-heading text-brand-dark;
 }
+*/
 
 /* Optional: Dark mode (if you want it) */
 @media (prefers-color-scheme: dark) {
   body {
-    @apply bg-black text-white;
+    @apply bg-white;
   }
 }
