@@ -259,24 +259,34 @@ export default function Home() {
 
 
             <p className="text-heading3 text-center pt-12 pb-2"> How Lessgo.ai Turns Your Ideas Into Pages That Sell   </p>
-            <p> But it’s not just “another AI page builder.”   </p>
-            <p>  It’s powered by something different.  </p>
-            <p>  Something I call the Conversion Intelligence Engine.  </p>
+            <p> It’s not just “another AI page builder.”   </p>
+            <p> It’s powered by something different.  </p>
+            <p>  Something I call the <span className="inline-block bg-brand-highlightText font-bold rounded px-1 py-0.5 ml-1">Conversion Intelligence Engine. </span> </p>
+            
+            
             <p>  Here’s how it works:  </p>
             <p>  Instead of asking you to pick a template...   </p>
             <p>  It asks you a few smart, intuitive questions —  </p>
             <p>  Like a real cofounder would.  </p>
-            <p>  It digs into your product’s true angles:  </p>
-            <p>  Who it's for  </p>
-            <p>  Why it matters  </p>
-            <p> What problem it crushes   </p>
-            <p>  What emotions it triggers  </p>
+            
+            <p>  It digs into <span className="font-semibold">your product’s true angles: </span> </p>
+            <ul className="pl-8 mb-6 text-body">
+            <li className="mb-2"> <span> ▸ </span> <span>Who it's for.</span> </li>
+            <li className="mb-2"> <span> ▸ </span> <span> Why it matters </span> </li>
+            <li className="mb-2"> <span> ▸ </span> <span> What problem it crushes  </span> </li>
+            <li className="mb-2"> <span> ▸ </span> <span> What emotions it triggers </span> </li>
+          </ul>
+
+           
             <p> Then it does the heavy lifting for you:   </p>
+
             <p> It crafts your copy, layout, and flow   </p>
+            
             <p> — based on real psychological triggers that actually convert —  </p>
+            
             <p>  Not based on pretty templates that look good but don't sell.  </p>
             <p> You don’t just get words.   </p>
-            <p>  You get a clear, structured argument for why your product matters —  </p>
+            <p>  You get a<span className="inline-block bg-brand-highlightText font-semibold rounded px-1 py-0.5 ml-1">clear, structured argument for why your product matters — </span> </p>
             <p> Framed perfectly for your ideal customer.   </p>
             <p>  All you have to do...  </p>
             <p> is answer a few simple prompts.   </p>
@@ -290,7 +300,8 @@ export default function Home() {
             <div className="mb-20">
           {!showForm && (
         <CTAButton
-          gaLabel="02 problem-section"
+          gaLabel="03 Solution-section"
+          text="Get Early Access Now!"
           onClick={(e) => {
             e.preventDefault(); // If you're still using <a> in CTAButton
             setShowForm(true); // ✅ Toggle the form
@@ -300,7 +311,7 @@ export default function Home() {
 
       {showForm && <WaitlistForm />}
       
-      <p className="text-lg md:text-base font-body italic text-brand-text max-w-[60rem] mt-8 md:mt-6 mb-16">
+      <p className="text-lg md:text-base text-center font-body italic text-brand-text max-w-[60rem] mt-8 md:mt-6 mb-16">
       [Launching May 7 — <span className= "font-bold"> Only 20 Spots </span> — <span className=" text-brand-accentPrimary"> 1 Year Free </span> Pro] <span className="underline text-brand-accentPrimary"></span>
       </p>
 
@@ -313,34 +324,72 @@ export default function Home() {
 
       <div className="mb-4 max-w-3xl mx-auto text-body space-y-6 leading-relaxed">
 
-      <p> Why I Had to Build This — And Why It Matters To You  </p>
+      <section className="bg-brand-highlightBG pb-8">
+      <p className="text-heading3 text-center pt-6 pb-8"> Why I Had to Build This — And Why It Matters To You  </p>
 
-      <div className="flex justify-center mb-6">
-        <Image
-          src={founderImage}
-          alt="Founder Sushant Jain"
-          className="rounded-xl shadow-lg object-cover mx-auto "
-        />
+   
+      
+      
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+
+    {/* Image Section */}
+    <div className="w-full lg:w-1/2">
+      <Image
+        src={founderImage}
+        alt="Founder Sushant Jain"
+        className="rounded-xl shadow-lg object-cover mx-auto"
+      />
+    </div>
+
+    {/* Text Section */}
+    <div className="w-full lg:w-1/2 space-y-6 italic text-left text-[1.1rem] text-body leading-relaxed">
+      <p>Hi, I’m Sushant.<br/>A 35-year-old indie hacker from Amsterdam.</p>
+
+      <p>I didn’t build Lessgo.ai because it was trendy.</p>
+
+      <p>I built it after spending 14 years in tech — and realizing a brutal truth:</p>
+
+      <p>Brilliant builders fail every day.</p>
+
+      <p>Not because their products suck.</p>
+
+      <p>But because nobody understands what they built.</p>
       </div>
 
+</div>
+<div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 space-y-6 italic text-[1.1rem] text-body leading-relaxed">
+      <p>I lived that pain.</p>
 
-      <p> I didn’t build Lessgo.ai because it was trendy.  </p>
-      <p> I built it because after 14 years in tech,  </p>
-      <p>   I watched brilliant builders fail — </p>
-      <p>  not because their products sucked,  </p>
-      <p> but because nobody understood what they made.  </p>
+      <p>So I bet my career on solving it.
 
-      <p>  I lived that pain. </p>
-      <p> Lessgo is my promise:  </p>
-      <p> Never again.  </p>
-      <p> Your Product is Unique. Your Page Should Be Too.  </p>
-      <p>  Now you might be thinking: </p>
-      <p> "Sounds great...  </p>
+      <br />(Yes — I even quit my $150K job to do this full-time.)</p>
+
+      <p>Lessgo.ai is not just a tool.</p>
+
+      <p>It’s a promise:</p>
+
+      <p className="font-bold not-italic text-brand-accentPrimary border-b-2 border-brand-accentPrimary inline-block pb-1">
+  Never again.
+</p>
+
+
+      {/* Optional: Signature */}
+      <p className="mt-4 font-semibold">– Sushant</p>
+   </div>
+</section>
       
-      <p>  But my product is different. </p>
-      <p> Will this really work for me?"  </p>
-    
-      <p>  "Will Lessgo.ai actually get my weird product?"  </p>
+      <p className="text-heading3 text-center pt-12 pb-2"> Your Product is Unique. Your Page Should Be Too.  </p>
+      <p>  Now you might be thinking: </p>
+      
+      <div>
+      <p className="italic mb-2"> "Sounds great...  </p>
+      
+      <p className="italic mb-2">  But my product is different. </p>
+      <p className="italic mb-2"> Will this really work for me?"  </p>
+      </div>
+      <p className="italic">  "Will Lessgo.ai actually get my weird product?"  </p>
+      
+     
       <p> Fair question.  </p>
       
       <p> Here’s the short answer:  </p>
@@ -373,7 +422,8 @@ export default function Home() {
       <div className="mb-20">
           {!showForm && (
         <CTAButton
-          gaLabel="02 problem-section"
+          gaLabel="04 Founder-section"
+          text="Get Early Access Now!"
           onClick={(e) => {
             e.preventDefault(); // If you're still using <a> in CTAButton
             setShowForm(true); // ✅ Toggle the form
@@ -383,7 +433,7 @@ export default function Home() {
 
       {showForm && <WaitlistForm />}
       
-      <p className="text-lg md:text-base font-body italic text-brand-text max-w-[60rem] mt-8 md:mt-6 mb-16">
+      <p className="text-lg md:text-base text-center font-body italic text-brand-text max-w-[60rem] mt-8 md:mt-6 mb-16">
       [Launching May 7 — <span className= "font-bold"> Only 20 Spots </span> — <span className=" text-brand-accentPrimary"> 1 Year Free </span> Pro] <span className="underline text-brand-accentPrimary"></span>
       </p>
 
@@ -400,13 +450,15 @@ export default function Home() {
       <div className="mb-4 max-w-3xl mx-auto text-body space-y-6 leading-relaxed">
 
 
-      <p> Build Faster. Sell Sharper. Launch Without Doubt  </p>
+      <p className="text-heading3 text-center pt-12 pb-2"> Build Faster. Sell Sharper. Launch Without Doubt  </p>
       <p> The founders who win aren’t always the ones who build better.  </p>
       <p> They're the ones who communicate better — faster.  </p>
       
       <p> You’ve built something real.  </p>
       <p>  Now it’s time to make the world see it. </p>
-      <p> Grab Your Early Access — Before The First 20 Spots Are Gone  </p>
+
+
+      <p className="text-heading3 text-center pt-12 pb-2"> Grab Your Early Access — Before The First 20 Spots Are Gone  </p>
       <p> Here is what you get if you sign up now  </p>
 
       <ul className="pl-8 mb-6 text-body">
@@ -421,6 +473,7 @@ export default function Home() {
           {!showForm && (
         <CTAButton
           gaLabel="02 problem-section"
+          text="Lock My Early Bird Spot!"
           onClick={(e) => {
             e.preventDefault(); // If you're still using <a> in CTAButton
             setShowForm(true); // ✅ Toggle the form
@@ -430,7 +483,7 @@ export default function Home() {
 
       {showForm && <WaitlistForm />}
       
-      <p className="text-lg md:text-base font-body italic text-brand-text max-w-[60rem] mt-8 md:mt-6 mb-16">
+      <p className="text-lg md:text-base text-center font-body italic text-brand-text max-w-[60rem] mt-8 md:mt-6 mb-16">
       [Launching May 7 — <span className= "font-bold"> Only 20 Spots </span> — <span className=" text-brand-accentPrimary"> 1 Year Free </span> Pro] <span className="underline text-brand-accentPrimary"></span>
       </p>
   
@@ -440,7 +493,7 @@ export default function Home() {
       </div>
 
           {/* Footer */}
-          <footer className="text-center text-gray-600">
+          <footer className="text-center text-gray-600 ">
             <p>© 2025 Lessgo.AI. All rights reserved.</p>
           </footer>
           

@@ -16,7 +16,7 @@ interface CTAButtonProps {
 }
 
 export default function CTAButton({
-    text = 'Join the Early Access List Now!',
+    text = 'Join the Early Access List!',
     href = '#waitlist',
     onClick,
     className = 'mt-12',
