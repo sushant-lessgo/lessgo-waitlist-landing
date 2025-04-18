@@ -4,7 +4,7 @@ import CTAButton from "./components/CTAButton";
 import WaitlistForm from "./components/WaitlistForm";
 import Image from 'next/image';
 import founderImage from '@/assets/images/founder.jpg';
-
+import { Check } from 'lucide-react';
 
 export default function Home() {
   const [showForm, setShowForm] = useState(false);
@@ -78,7 +78,7 @@ export default function Home() {
             <p>You got the perfect idea.</p>
             <p>You solved a real problem.</p>
             <p>But one question is bothering you:</p>
-            <p className="inline-block bg-brand-highlightText font-semibold rounded px-1 py-0.5 ml-1">Will anyone even get it?</p>
+            <p className="inline-block bg-brand-highlightText font-semibold rounded px-2 py-1 ml-1">Will anyone even get it?</p>
             <p>And you are not alone…</p>
             <p>CB Insights did a post-mortem of 110+ failed startups</p>
             <p> And results were shocking…   </p>
@@ -112,7 +112,7 @@ export default function Home() {
           </ul>
 
             <p> If you’re even a little unsure...   </p>
-            <p className="inline-block bg-brand-highlightText font-semibold rounded px-1 py-0.5 ml-1"> Your messaging needs help — before you need more traffic.   </p>
+            <p className="inline-block bg-brand-highlightText font-semibold rounded px-2 py-1 ml-1"> Your messaging needs help — before you need more traffic.   </p>
             
             
             {/* <div>
@@ -200,7 +200,7 @@ export default function Home() {
             <p> Lessgo.ai was built to fix this gap.   </p>
             <p> It doesn’t just generate "stuff."   </p>
             <p>  It digs deep into your<span className= "font-bold"> product</span> , your <span className= "font-bold">market</span> , and your <span className= "font-bold">user psychology</span>  —  </p>
-            <p className="inline-block bg-brand-highlightText font-semibold rounded px-1 py-0.5 ml-1"> And builds a page that actually sells.   </p>
+            <p className="inline-block bg-brand-highlightText font-semibold rounded px-2 py-1 ml-1"> And builds a page that actually sells.   </p>
             
             
             <p className="pt-6"> Now, you might still wonder...   </p>
@@ -216,7 +216,7 @@ export default function Home() {
             <p> If people don’t understand your value in 10 seconds,   </p>
             <p>   it doesn’t matter how good your product is.  </p>
             <p className="font-semibold"> Confusion kills momentum.   </p>
-            <p className="inline-block bg-brand-highlightText font-semibold rounded px-1 py-0.5 ml-1"> Clarity creates it.  </p>
+            <p className="inline-block bg-brand-highlightText font-semibold rounded px-2 py-1 ml-1"> Clarity creates it.  </p>
             <p> The best SaaS companies don’t win because they built the best tech.   </p>
             <p> They win because they <span className="font-bold"> explain it better, faster, sharper. </span>  </p>
 
@@ -233,7 +233,7 @@ export default function Home() {
             <p>  First Round Review calls it "message-market fit."  </p>
             <p>  No matter who you listen to...  </p>
             <p> The message is clear:   </p>
-            <p className="inline-block bg-brand-highlightText font-semibold rounded px-1 py-0.5 ml-1">  If they don’t get it, you don’t get them.  </p>
+            <p className="inline-block bg-brand-highlightText font-semibold rounded px-2 py-1 ml-1">  If they don’t get it, you don’t get them.  </p>
             
             
             <p className="pt-6"> Now, maybe you're thinking:   </p>
@@ -261,7 +261,7 @@ export default function Home() {
             <p className="text-heading3 text-center pt-12 pb-2"> How Lessgo.ai Turns Your Ideas Into Pages That Sell   </p>
             <p> It’s not just “another AI page builder.”   </p>
             <p> It’s powered by something different.  </p>
-            <p>  Something I call the <span className="inline-block bg-brand-highlightText font-bold rounded px-1 py-0.5 ml-1">Conversion Intelligence Engine. </span> </p>
+            <p>  Something I call the <span className="inline-block bg-brand-highlightText font-bold rounded px-2 py-1 ml-1">Conversion Intelligence Engine. </span> </p>
             
             
             <p>  Here’s how it works:  </p>
@@ -461,13 +461,24 @@ export default function Home() {
       <p className="text-heading3 text-center pt-12 pb-2"> Grab Your Early Access — Before The First 20 Spots Are Gone  </p>
       <p> Here is what you get if you sign up now  </p>
 
-      <ul className="pl-8 mb-6 text-body">
-            <li className="mb-2"> <span> ▸ </span> <span>1 Year of Pro Features — Free</span> </li>
-            <li className="mb-2"> <span> ▸ </span> <span> Lifetime discount up to 60% </span> </li>
-            <li className="mb-2"> <span> ▸ </span> <span> Priority support when we launch </span> </li>
-            <li className="mb-2"> <span> ▸ </span> <span> Only for the first 20 founders </span> </li>
-
-          </ul>
+      <ul className="pl-8 mb-6 text-body space-y-3">
+  <li className="flex items-start gap-2">
+    <Check className="w-5 h-5 text-green-600 mt-1" />
+    <span>1 Year of Pro Features — Free</span>
+  </li>
+  <li className="flex items-start gap-2">
+    <Check className="w-5 h-5 text-green-600 mt-1" />
+    <span>Lifetime discount up to 60%</span>
+  </li>
+  <li className="flex items-start gap-2">
+    <Check className="w-5 h-5 text-green-600 mt-1" />
+    <span>Priority support when we launch</span>
+  </li>
+  <li className="flex items-start gap-2">
+    <Check className="w-5 h-5 text-green-600 mt-1" />
+    <span>Only for the first 20 founders</span>
+  </li>
+</ul>
 
           <div className="mb-20">
           {!showForm && (

@@ -44,7 +44,7 @@ module.exports = {
           fontWeight: '600',
         },
         '.text-heading4': {
-          fontSize: '1.35rem',
+          fontSize: '1.2rem',
           fontWeight: '500',
         },
         'body': {
