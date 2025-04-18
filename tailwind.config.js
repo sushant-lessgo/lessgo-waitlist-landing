@@ -38,7 +38,10 @@ module.exports = {
           fontSize: '1.5rem',
         },
         '.text-heading3': {
-          fontSize: '1.2rem',
+          fontSize: '1.65rem',
+        },
+        '.text-heading4': {
+          fontSize: '1.35rem',
         },
         // md: overrides
         '@screen md': {
@@ -62,6 +65,9 @@ module.exports = {
             fontSize: '2.5rem',
           },
           '.text-heading3': {
+            fontSize: '1.5rem',
+          },
+          '.text-heading4': {
             fontSize: '1.35rem',
           },
         },

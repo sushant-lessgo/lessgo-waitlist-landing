@@ -33,8 +33,8 @@ export default function Home() {
       Get <span className=" text-brand-accentPrimary">High-Converting</span> Landing Page in 5 Minutes 
       </p>
       
-      {/* Heading3 */}
-      <p className="text-heading3 font-semibold text-brand-text max-w-[40rem] mt-10 mb-2">
+      {/* Heading4 */}
+      <p className="text-heading4 font-medium lg:font-semibold text-brand-text max-w-[40rem] mt-10 mb-2">
       Describe your idea <span className=" text-brand-accentPrimary"> → </span> Chat with AI <span className=" text-brand-accentPrimary"> → </span> Get a ready-to-launch landing page (both <span className=" text-brand-accentPrimary">copy and design</span>)
       </p>
 
@@ -50,19 +50,22 @@ export default function Home() {
 
       {showForm && <WaitlistForm />}
 
-      <p className="text-lg md:text-base font-body italic text-brand-text max-w-[60rem] mt-8 md:mt-6 mb-7">
+      <p className="text-lg md:text-base font-body italic text-brand-text max-w-[60rem] mt-8 md:mt-6 mb-16">
       [Launching May 7 — <span className= "font-bold"> Only 20 Spots </span> — <span className=" text-brand-accentPrimary"> 1 Year Free </span> Pro] <span className="underline text-brand-accentPrimary"></span>
       </p>
 
 
       
       <div className="text-brand-text text-left">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           
         
 
           {/* Intro Section */}
           <div className="mb-4 max-w-3xl mx-auto text-body space-y-6 leading-relaxed">
+
+          <p className="text-heading3 font-semibold lg:font-medium text-center mb-10">The Real Reason Launching Feels So Hard (And It's Not Your Product)</p>
+
             <p className="text-xl font-bold">Dear Friend,</p>
             <p>If you are a SaaS founder… and you’re reading this right now…</p>
             <p>Then one thing is probably true:</p>
