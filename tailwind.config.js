@@ -20,6 +20,8 @@ module.exports = {
           text: '#003E80',
           accentPrimary: '#FF814A',
           logo: '#006CFF',
+          highlightText: '#FFE8DC',
+          highlightBG: '#FFF5EF',
         },
       },
       

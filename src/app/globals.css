@@ -12,6 +12,13 @@ body {
   @apply font-body text-brand-text bg-white antialiased;
 }
 
+.highlighted-text {
+  background-color: #FFF3E0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
 /* Optional: Global heading style 
 h1, h2, h3, h4, h5 {
   @apply font-heading text-brand-dark;
