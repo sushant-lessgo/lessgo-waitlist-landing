@@ -22,9 +22,7 @@ module.exports = {
           logo: '#006CFF',
         },
       },
-      fontSize: {
-        body: '1.2rem',
-      },
+      
     },
   },
   plugins: [
@@ -33,26 +31,42 @@ module.exports = {
         // Base (mobile-first)
         '.text-heading1': {
           fontSize: '2.7rem',
+          fontWeight: '800',
         },
         '.text-heading2': {
           fontSize: '1.5rem',
+          fontWeight: '600',
         },
         '.text-heading3': {
           fontSize: '1.65rem',
+          fontWeight: '600',
         },
         '.text-heading4': {
           fontSize: '1.35rem',
+          fontWeight: '500',
         },
+        'body': {
+          fontSize: '1.2rem',     // Normal Body Text
+          fontWeight: '400',      // Regular
+        },
+
         // md: overrides
         '@screen md': {
           '.text-heading1': {
             fontSize: '3.5rem',
+            fontWeight: '800',
           },
           '.text-heading2': {
             fontSize: '1.6rem',
+            fontWeight: '600',
           },
           '.text-heading3': {
             fontSize: '1.25rem',
+            fontWeight: '600', 
+          },
+          '.text-heading4': {
+            fontSize: '1.25rem',
+            fontWeight: '500',    // Keep Medium
           },
         },
   
@@ -60,15 +74,19 @@ module.exports = {
         '@screen lg': {
           '.text-heading1': {
             fontSize: '5rem',
+            fontWeight: '800',
           },
           '.text-heading2': {
             fontSize: '2.5rem',
+            fontWeight: '600',
           },
           '.text-heading3': {
             fontSize: '1.5rem',
+            fontWeight: '600',
           },
           '.text-heading4': {
             fontSize: '1.35rem',
+            fontWeight: '500',
           },
         },
       });

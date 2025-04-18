@@ -24,17 +24,17 @@ export default function Home() {
     
    
       {/* Heading1*/}
-      <h1 className="text-heading1 font-heading font-extrabold text-brand-text leading-tight max-w-[70rem] mt-4">
+      <h1 className="text-heading1 font-heading text-brand-text leading-tight max-w-[70rem] mt-4">
       F*ck Launch Anxiety <span className="underline text-brand-accentPrimary"></span>
       </h1>
 
       {/* Heading2 */}
-      <p className="text-heading2 font-semibold text-brand-text max-w-[60rem] mt-12 mb-2">
+      <p className="text-heading2 text-brand-text max-w-[60rem] mt-12 mb-2">
       Get <span className=" text-brand-accentPrimary">High-Converting</span> Landing Page in 5 Minutes 
       </p>
       
       {/* Heading4 */}
-      <p className="text-heading4 font-medium lg:font-semibold text-brand-text max-w-[40rem] mt-10 mb-2">
+      <p className="text-heading4 text-brand-text max-w-[40rem] mt-10 mb-2">
       Describe your idea <span className=" text-brand-accentPrimary"> → </span> Chat with AI <span className=" text-brand-accentPrimary"> → </span> Get a ready-to-launch landing page (both <span className=" text-brand-accentPrimary">copy and design</span>)
       </p>
 
@@ -64,9 +64,9 @@ export default function Home() {
           {/* Intro Section */}
           <div className="mb-4 max-w-3xl mx-auto text-body space-y-6 leading-relaxed">
 
-          <p className="text-heading3 font-semibold lg:font-medium text-center mb-10">The Real Reason Launching Feels So Hard (And It's Not Your Product)</p>
+          <p className="text-heading3 text-center mb-10">The Real Reason Launching Feels So Hard (And It's Not Your Product)</p>
 
-            <p className="text-xl font-bold">Dear Friend,</p>
+            <p className=" font-bold">Dear Friend,</p>
             <p>If you are a SaaS founder… and you’re reading this right now…</p>
             <p>Then one thing is probably true:</p>
             <p className="underline">You’re stuck with a landing page that won’t convert.</p>
