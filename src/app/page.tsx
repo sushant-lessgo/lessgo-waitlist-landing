@@ -23,16 +23,21 @@ export default function Home() {
    <main className="flex flex-col items-center justify-center px-6 py-20 text-center">
     
    
-      {/* Heading*/}
-      <h1 className="text-headline font-heading font-extrabold text-brand-text leading-tight max-w-[70rem]">
+      {/* Heading1*/}
+      <h1 className="text-heading1 font-heading font-extrabold text-brand-text leading-tight max-w-[70rem] mt-4">
       F*ck Launch Anxiety <span className="underline text-brand-accentPrimary"></span>
       </h1>
 
-      {/* Subheading */}
-      <p className="text-subheadline font-semibold font-body italic text-brand-text max-w-[60rem] mt-10 mb-2">
-      35 year old indie hacker from Amsterdam combines his AI and copywriting skills to create breakthrough landing page builder which will generate revenue while you sleep.
+      {/* Heading2 */}
+      <p className="text-heading2 font-semibold text-brand-text max-w-[60rem] mt-12 mb-2">
+      Get <span className=" text-brand-accentPrimary">High-Converting</span> Landing Page in 5 Minutes 
       </p>
       
+      {/* Heading3 */}
+      <p className="text-heading3 font-semibold text-brand-text max-w-[40rem] mt-10 mb-2">
+      Describe your idea <span className=" text-brand-accentPrimary"> → </span> Chat with AI <span className=" text-brand-accentPrimary"> → </span> Get a ready-to-launch landing page (both <span className=" text-brand-accentPrimary">copy and design</span>)
+      </p>
+
       {!showForm && (
         <CTAButton
           gaLabel="01 hero-section"
@@ -44,6 +49,11 @@ export default function Home() {
       )}
 
       {showForm && <WaitlistForm />}
+
+      <p className="text-lg md:text-base font-body italic text-brand-text max-w-[60rem] mt-8 md:mt-6 mb-7">
+      [Launching May 7 — <span className= "font-bold"> Only 20 Spots </span> — <span className=" text-brand-accentPrimary"> 1 Year Free </span> Pro] <span className="underline text-brand-accentPrimary"></span>
+      </p>
+
 
       
       <div className="text-brand-text text-left">

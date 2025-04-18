@@ -31,30 +31,38 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         // Base (mobile-first)
-        '.text-headline': {
-          fontSize: '3rem',
+        '.text-heading1': {
+          fontSize: '2.7rem',
         },
-        '.text-subheadline': {
-          fontSize: '1.15rem',
+        '.text-heading2': {
+          fontSize: '1.5rem',
         },
-  
+        '.text-heading3': {
+          fontSize: '1.2rem',
+        },
         // md: overrides
         '@screen md': {
-          '.text-headline': {
+          '.text-heading1': {
             fontSize: '3.5rem',
           },
-          '.text-subheadline': {
+          '.text-heading2': {
+            fontSize: '1.6rem',
+          },
+          '.text-heading3': {
             fontSize: '1.25rem',
           },
         },
   
         // lg: overrides
         '@screen lg': {
-          '.text-headline': {
+          '.text-heading1': {
             fontSize: '5rem',
           },
-          '.text-subheadline': {
-            fontSize: '1.5rem',
+          '.text-heading2': {
+            fontSize: '2.5rem',
+          },
+          '.text-heading3': {
+            fontSize: '1.35rem',
           },
         },
       });
