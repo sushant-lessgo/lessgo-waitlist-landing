@@ -22,28 +22,40 @@ export default function WaitlistForm() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10">
+    <div className="w-full max-w-2xl mx-auto mt-10 px-4">
+
       {status === "success" ? (
-        <p className="text-green-600 text-center">
-          ✅ You're on the waitlist! Check your email to confirm.
+        <div className="bg-green-50 text-green-700 p-4 rounded-md text-center shadow-md">
+        <p className="text-lg font-bold">
+          You're In! Your Early Access Spot is Reserved.
         </p>
+        <p className="text-sm mt-2">
+          You'll get exclusive updates, early previews, and first access to Lessgo.ai 🤝
+        </p>
+      </div>
+      
+      
+      
       ) : (
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
-          <input
-            type="email"
-            placeholder="Enter your email to join the Lessgo.ai waitlist"
-            className="flex-1 p-2 border border-gray-300 rounded"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            required
-          />
-          <button
-            type="submit"
-            className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800"
-            disabled={status === "loading"}
-          >
-            {status === "loading" ? "Joining..." : "Get Early Access"}
-          </button>
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-4 w-full">
+
+        <input
+        type="email"
+        placeholder="Enter your email to join the Lessgo.ai waitlist"
+        className="flex-1 w-full p-4 border text-[1.15rem] border-gray-300 rounded-md focus:ring-2 focus:ring-brand-accentPrimary focus:outline-none"
+        onChange={(e) => setEmail(e.target.value)}
+        value={email}
+        required
+      />
+
+      <button
+        type="submit"
+        className="bg-brand-accentPrimary text-white font-semibold px-6 py-4 rounded-md hover:bg-orange-600 transition-all duration-200"
+        disabled={status === "loading"}
+      >
+        {status === "loading" ? "Joining..." : "Get Early Access"}
+      </button>
+
         </form>
       )}
       {status === "error" && (
