@@ -13,10 +13,7 @@ module.exports = {
       },
       colors: {
         brand: {
-          yellow: '#FFF200',
-          timer: '#FDD76E',
-          dark: '#000000',
-          soft: '#333333',
+          
           text: '#003E80',
           accentPrimary: '#FF814A',
           logo: '#006CFF',
